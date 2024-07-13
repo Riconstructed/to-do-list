@@ -66,17 +66,7 @@ function startAnimation() {
 
   getSt.onclick = startAnimation;
  
-function removeAnimation(){
 
-}
-
-  getStminus.addEventListener("click", () => {
-    if(title1.classList.contains("none")){
-  addedtask.classList.add("none");
-  anibox.classList.remove("none")
-  getStminus.classList.remove("fixed")
-  getStminus.classList.add("antifix")
-  console.log('achha nice');
   
 
   }
