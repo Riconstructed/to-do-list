@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+} body{
+    background-image: url(abstr2.jpg);
+    background-size: 100vw;
+} 
+.todo, .done{
+   
+    @media (orientation: landscape) {
+       height: max(70vh, fit-content);
+    width: min(20vw, 250px);
+   
+    }
+    @media (orientation: portrait) {
+       height: 40vh;
+       width: 250px;
+    }
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+    z-index: 1;
+    margin: 100px 0px;
+}
+
+.container{
+    display: flex;
+       justify-content: space-around;
+     align-items: center;
+    @media (orientation: landscape) {
+        flex-direction: row;
+    }
+    @media (orientation: portrait) {
+        flex-direction: column;
+    }
+    
+}
+.title{
+    margin: 12px 20px;
+    display: flex;
+    flex-direction: row;
+}
+.todolist ul{
+    list-style-type: none;
+}
+ul li{
+    margin: 10px 20px;
+}
+svg path{
+    stroke: white;
+}
+/* .spanned{    margin: 7px;
+position: relative;
+top:5px;
+} */
+
+.text{
+    border-style: none;
+    background-color: #ffffff79;
+    width: min-content;
+    overflow: scroll;
+}
+
+.text:not(:placeholder-shown){
+    border-style: none;
+   padding: 2px;
+  
+  
+}
+.text:placeholder-shown{
+    border: 2px solid red;
+}
+
+.done .title span, .title-1{
+    font-size: 1.05em;
+}
+form{
+    width: 81px;
+    box-sizing: border-box;
+    display: inline-block;
+   
+   
+}
+.inputtask{ 
+    border-style: none;
+  padding: 1px 0px;
+    height: 16.8px;
+    border: none;
+    outline: none;
+}
+

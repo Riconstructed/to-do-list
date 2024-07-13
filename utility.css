@@ -1,0 +1,168 @@
+.animateplus {
+    animation: plus 1s ease-in reverse;
+}
+
+@keyframes plus {
+    0% {}
+
+    50% {
+
+
+        stroke: rgb(255, 0, 0) !important;
+
+
+
+
+
+
+
+
+    }
+
+    100% {
+
+        transform: rotate(90deg);
+
+    }
+}
+
+/* .title {
+    width: fit-content;
+} */
+
+.fadeout {
+    border-right: 2px solid rgb(255, 255, 255);
+    padding: 0px 3px;
+    animation: Type 1.5s ease-in reverse;
+    overflow: hidden;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+@keyframes Type {
+    0% {
+
+        width: 0%;
+        display: none;
+    }
+
+    50% {
+        width: 0%;
+        display: none;
+    }
+
+    100% {
+
+        width: 50%;
+        display: inline-flex;
+    }
+
+}
+.fadein {
+    border-right: 2px solid rgb(255, 255, 255);
+    padding: 0px 3px;
+    animation: Type2 1.5s ease-in ;
+    overflow: hidden;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+@keyframes Type2 {
+    0% {
+
+        width: 0%;
+        display: none;
+    }
+
+    50% {
+        width: 0%;
+        display: none;
+    }
+
+    100% {
+
+        width: 50%;
+        display: inline-flex;
+    }
+
+}
+.box{
+   
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    height: 16.8px;
+    width: 1px;
+    top: 3px;
+}
+.createbox{
+    animation: create 1s ease-in 0s;
+}
+@keyframes create {
+    0%{
+        width: 1px;
+    }
+    80%{
+        width: 80px;
+    }
+    100%{
+        width: 81px;
+    }
+}
+.removebox{
+    animation: remove 1s ease-in 0s reverse;
+}
+@keyframes remove {
+    0%{
+        width: 1px;
+    }
+    80%{
+        width: 80px;
+    }
+    100%{
+        width: 81px;
+    }
+}
+.none{
+    display: none;
+}
+
+.alpha{
+    animation: alpha 1s linear 0s;
+}
+@keyframes alpha {
+    from{
+        background-color: #ffffff38;
+    }
+    to{
+        background-color: #fff;
+    }
+}
+
+ .fix{
+    animation: fix 1s ease-in ;
+ }
+@keyframes fix {
+    from{
+
+    }
+    to{
+        margin-left: 95px;
+    }
+}
+ .antifix{
+    animation: afix 1s ease-out reverse;
+ }
+@keyframes afix {
+    from{
+
+    }
+    to{
+        margin-left: 95px;
+    }
+}
+.fixed{
+position: relative;
+margin-left: 95px;
+
+}
